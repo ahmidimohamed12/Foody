@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Foody.Views.MyPage_login">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="0,0,0,0" >
+            <Image
+                HorizontalOptions="CenterAndExpand"
+                WidthRequest="{Binding wi}"
+                HeightRequest="150"
+                x:Name="iml"
+                Source="AH.png"
+                />
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Entry
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    x:Name="txtemail"
+                    />
+                <Entry
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    x:Name="txtpas"
+                    />
+                 <Button
+                    Text="Login"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center"
+                    />
+                 <Button
+                    VerticalOptions="Center"
+                    TextColor="White"
+                    Text="Registartion"
+                    FontAttributes="Bold"
+                    BackgroundColor="Black"
+                    />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

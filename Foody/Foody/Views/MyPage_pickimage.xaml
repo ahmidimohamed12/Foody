@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pick="clr-namespace:Plugin.FilePicker.Abstractions;assembly=Plugin.FilePicker" BackgroundColor="White" xmlns:circ="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" x:Class="Foody.Views.MyPage_pickimage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <circ:CircleImage
+                Margin="0,35,0,0"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                x:Name="crl"
+                HeightRequest="150"
+                WidthRequest="150"
+                IsVisible="false"
+                />
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" >
+                <Button x:Name="btnsuiv" HorizontalOptions="Start" BackgroundColor="#0086C4" FontAttributes="Bold" TextColor="White" />
+                <Button x:Name="btnback" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" BackgroundColor="#0086C4" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

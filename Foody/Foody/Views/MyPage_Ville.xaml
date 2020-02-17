@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Foody.Views.MyPage_Ville">
+    <ContentPage.Content>
+        <StackLayout>
+           
+        <StackLayout>
+             <StackLayout.Margin>
+                <OnPlatform x:TypeArguments="Thickness">
+                    <On Platform="ios" Value="0,20,0,0" />
+                    <On Platform="Android" Value="0,0,0,0"/>
+                </OnPlatform>
+            </StackLayout.Margin>
+            <SearchBar  x:Name="srch_ville" />
+        </StackLayout>
+        <ListView x:Name="ls" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                Text="{Binding}"
+   
+                                />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

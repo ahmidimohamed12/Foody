@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ic="clr-namespace:IconEntry.FormsPlugin.Abstractions;assembly=IconEntry.FormsPlugin.Abstractions"
+             x:Class="Foody.Views.page_Registration">
+    <ContentPage.Content>
+         <ScrollView>
+             <StackLayout Margin="0,20,0,0">
+
+        <Grid  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="{Binding wi}" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="{Binding wi}" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <Button
+                Text="Image"
+                CornerRadius="20"
+                BorderColor="Black"
+                Grid.Column="1"
+                Grid.Row="0"
+                Grid.RowSpan="4"
+                x:Name="btnimage"
+                TextColor="Black"
+                FontAttributes="Bold"
+                BorderWidth="1"
+                />
+            <Image
+                Grid.Column="1"
+                Grid.Row="0"
+                Grid.RowSpan="4"
+                x:Name="im1"
+                IsVisible="false"
+                />
+            <Entry
+                Grid.Column="3"
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Keyboard="Text"
+                x:Name="txtnom"
+                />
+            <Entry
+                Keyboard="Text"
+                Grid.Column="3"
+                Grid.Row="2"
+                Grid.RowSpan="2"
+                x:Name="txtprenom"
+                />
+            <Entry
+                Keyboard="Email"
+                Grid.Column="1"
+                Grid.Row="5"
+                Grid.RowSpan="2"
+                x:Name="txtEmail"
+                Grid.ColumnSpan="2"
+                />
+            <Entry
+                Grid.Column="1"
+                Grid.Row="8"
+                Grid.RowSpan="2"
+                Grid.ColumnSpan="2"
+                />
+
+        </Grid>
+             
+          <Button
+                 VerticalOptions="EndAndExpand"
+                 HorizontalOptions="EndAndExpand"
+                 WidthRequest="100"
+                 BackgroundColor="#058FC4"
+                Text="Next"
+              TextColor="White"
+                 />
+                 
+             </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
