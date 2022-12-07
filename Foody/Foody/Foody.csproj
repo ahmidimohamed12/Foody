@@ -20,7 +20,7 @@
     <PackageReference Include="Xamarin.Forms.SegmentedButton" Version="1.0.2" />
     <PackageReference Include="Forms.Controls.FlexButton" Version="0.8.0" />
     <PackageReference Include="Xam.Plugin.ImageButton" Version="2.1.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
   </ItemGroup>
   <ItemGroup>
